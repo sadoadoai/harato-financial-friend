@@ -1,4 +1,4 @@
-import { CreditCard, Target, ChartLine, Robot } from "lucide-react";
+import { CreditCard, Target, ChartLine, Bot } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 
 const features = [
@@ -18,7 +18,7 @@ const features = [
     description: "Get detailed insights into your investment portfolio",
   },
   {
-    icon: Robot,
+    icon: Bot,
     title: "AI Recommendations",
     description: "Receive smart suggestions based on your financial behavior",
   },
