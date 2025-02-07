@@ -34,26 +34,16 @@ export const Features = () => {
             Everything you need to take control of your finances
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="grid sm:grid-cols-2 gap-4">
-            {features.map((feature, index) => (
-              <Card key={index} className="border-2 border-accent hover:border-primary/20 transition-colors">
-                <CardContent className="p-6">
-                  <feature.icon className="w-8 h-8 text-primary mb-4" />
-                  <h3 className="font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-sm text-gray-600">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          <div className="relative">
-            <img
-              src="/lovable-uploads/dab9a6ab-0d97-4af1-81e0-f78d8b239a1e.png"
-              alt="Features illustration"
-              className="rounded-lg shadow-xl"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent rounded-lg" />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((feature, index) => (
+            <Card key={index} className="border-2 border-accent hover:border-primary/20 transition-colors">
+              <CardContent className="p-6">
+                <feature.icon className="w-8 h-8 text-primary mb-4" />
+                <h3 className="font-semibold mb-2">{feature.title}</h3>
+                <p className="text-sm text-gray-600">{feature.description}</p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
