@@ -22,23 +22,23 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "#1D1616",
-        foreground: "#EEEEEE",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#8E1616",
+          DEFAULT: "#1EAEDB",
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#D84040",
+          DEFAULT: "#F97316",
           foreground: "#FFFFFF",
         },
         accent: {
-          DEFAULT: "#2A1F1F",
-          foreground: "#EEEEEE",
+          DEFAULT: "#D3E4FD",
+          foreground: "#221F26",
         },
         muted: {
-          DEFAULT: "#2A1F1F",
-          foreground: "#EEEEEE",
+          DEFAULT: "#F6F6F7",
+          foreground: "#666666",
         },
       },
       borderRadius: {
@@ -61,10 +61,10 @@ export default {
         },
         glow: {
           "0%, 100%": {
-            boxShadow: "0 0 20px rgba(142, 22, 22, 0.3)",
+            boxShadow: "0 0 20px rgba(30, 174, 219, 0.3)",
           },
           "50%": {
-            boxShadow: "0 0 30px rgba(216, 64, 64, 0.5)",
+            boxShadow: "0 0 30px rgba(30, 174, 219, 0.6)",
           },
         },
       },
