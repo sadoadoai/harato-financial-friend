@@ -1,15 +1,16 @@
 
 import { Home, PieChart, Wallet, Target, Bell, FileText, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const menuItems = [
-  { icon: Home, label: "Overview", href: "#overview" },
-  { icon: Wallet, label: "Budget", href: "#budget" },
-  { icon: PieChart, label: "Investments", href: "#investments" },
-  { icon: Target, label: "Goals", href: "#goals" },
-  { icon: Bell, label: "Alerts", href: "#alerts" },
-  { icon: FileText, label: "Reports", href: "#reports" },
-  { icon: Shield, label: "Emergency", href: "#emergency" },
+  { icon: Home, label: "Overview", href: "/dashboard" },
+  { icon: Wallet, label: "Budget", href: "/budget" },
+  { icon: PieChart, label: "Investments", href: "/investments" },
+  { icon: Target, label: "Goals", href: "/goals" },
+  { icon: Bell, label: "Alerts", href: "/alerts" },
+  { icon: FileText, label: "Reports", href: "/reports" },
+  { icon: Shield, label: "Emergency", href: "/emergency" },
 ];
 
 export const Sidebar = ({ open }: { open: boolean }) => {
@@ -24,13 +25,13 @@ export const Sidebar = ({ open }: { open: boolean }) => {
         <ul className="space-y-2">
           {menuItems.map((item) => (
             <li key={item.label}>
-              <a
-                href={item.href}
+              <Link
+                to={item.href}
                 className="flex items-center p-2 text-base font-normal rounded-lg text-foreground hover:bg-primary/20"
               >
                 <item.icon className="w-6 h-6" />
                 <span className="ml-3">{item.label}</span>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
